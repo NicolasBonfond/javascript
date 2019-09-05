@@ -12,5 +12,14 @@
 (() => {
     document.getElementById("run").addEventListener("click", () => {
         // your code here
+        for (let number = 1; number<21; number++){
+            if ((number%2) == 0) {
+                console.log(number**2)
+            }
+            else{
+                continue;
+            }
+        }
+
     });
 })();
