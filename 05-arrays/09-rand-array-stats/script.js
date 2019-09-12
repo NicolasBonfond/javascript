@@ -15,12 +15,33 @@
         return Math.floor(Math.random() * Math.floor(max));
       }
 
-      console.log (getRandomInt(101));
-
+      var tableau = new Array;
+      //initialise 
     document.getElementById("run").addEventListener("click", () => {
-        
+    // boucle dans les cellules pour y attribuer le nombre aleatoire
+    for (i = 1; i < 11; i++) {
+    tableau[i-1] = getRandomInt(101);
+    document.getElementById("n-"+i).innerHTML = tableau[i-1];
+    }
+    tableau.sort((a,b) => a - b)
+    //nombre mini
+    document.getElementById("min").innerHTML = tableau[0];
 
+    //nombre maxi
+    document.getElementById("max").innerHTML = tableau[(tableau.length)-1];
 
+    //somme nombre
+    let sum = 0
+    for (i = 0; i < tableau.length; i++){
+      sum += tableau[i];
+    }
+    document.getElementById("sum").innerHTML = sum
+    
+
+    //moyenne 
+    let ave = sum/tableau.length; i++;
+    
+    document.getElementById("average").innerHTML = ave;
     })
     // your code here
 })();
