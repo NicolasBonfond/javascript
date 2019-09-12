@@ -13,6 +13,23 @@
     // to get the value of an input: document.getElementById("element-id").value
 
     document.getElementById("run").addEventListener("click", () => {
-        // your code here
+        let n = Number(document.getElementById("number").value);
+        console.log(n);
+        let start = n-1;
+        if (start > 0) {
+        for (i = start; i > 0; i--){
+                n = n*i;
+                /* console.log(i); */
+                console.log(n);
+           }}
+        else{
+        n = 1
+        console.log(n);
+}        
+        // if n > 1
+        // n * i;
+        // n--;
+        // else n = 1;
+
     });
 })();

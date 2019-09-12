@@ -10,6 +10,17 @@
 // You will have time to focus on it later.
 
 (() => {
+    let cDate = new Date();
+    let cHour = cDate.getHours();
+    console.log(cHour);
+    if(cHour >= 18){
+        document.getElementById("target").innerHTML = "Bonsoir !"
+
+    }
+    else{
+        document.getElementById("target").innerHTML = "Bonjour !"
+    }
+    
     // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
     // your code here
 })();

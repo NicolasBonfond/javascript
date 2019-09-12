@@ -11,8 +11,32 @@
 
 (() => {
     // to get the value of an input: document.getElementById("element-id").value
-
     document.getElementById("run").addEventListener("click", () => {
         // your code here
+        let n = document.getElementById("numbers").value;
+        console.log(n);
+        let n2 =n.split(", ");
+        console.log(n2);
+
+        let n3 = n2.map(Number);
+        console.log(n3);
+
+        function compare(x, y) {
+            return x - y;
+        }
+
+        n3.sort(compare);
+
+        console.log(n3);
+
+/* 
+        let n3 = n2.forEach(function(element) {
+            parseInt(element);
+        }); */
+
+ /*        
+       console.log(n);
+       console.log(Array.from(n)); */
+
     });
 })();

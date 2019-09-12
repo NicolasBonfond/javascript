@@ -10,5 +10,27 @@
 // You will have time to focus on it later.
 
 (() => {
+    document.getElementById("run").addEventListener("click", () => {
+        let rand = Math.floor(Math.random()*4)+1;
+        console.log(rand);
+        switch(rand){
+            case 1 : 
+                    document.body.style.backgroundColor="red";
+                    break;
+
+            case 2:
+                    document.body.style.backgroundColor="yellow";
+                    break;
+            
+            case 3:
+                    document.body.style.backgroundColor="green";
+                    break;
+
+            case 4:
+                    document.body.style.backgroundColor="blue";
+                    break;
+
+                }
+    })
     // your code here
 })();

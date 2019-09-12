@@ -10,5 +10,17 @@
 // You will have time to focus on it later.
 
 (() => {
+
+    function getRandomInt(max) {
+        return Math.floor(Math.random() * Math.floor(max));
+      }
+
+      console.log (getRandomInt(101));
+
+    document.getElementById("run").addEventListener("click", () => {
+        
+
+
+    })
     // your code here
 })();

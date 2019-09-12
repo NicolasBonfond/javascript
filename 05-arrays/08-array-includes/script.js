@@ -24,6 +24,8 @@
         "raisin",
         "cerise",
     ];
-
+document.getElementById("run").addEventListener("click", () => {
+console.log(fruits.includes("pomme"));
+})
     // your code here
 })();

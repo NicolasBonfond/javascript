@@ -87,6 +87,9 @@
             age: 81,
         },
     ];
-
+document.getElementById("run").addEventListener("click" , () => {
+var adult = people.filter(adult => adult.age > 18);
+console.log(adult);
+})
     // your code here
 })();
