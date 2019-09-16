@@ -87,6 +87,16 @@
             age: 81,
         },
     ];
+const reducer = (accumulator, currentValue) => accumulator + currentValue;
+var sumAge = new Array;
+document.getElementById("run").addEventListener("click", () => {
+people.forEach(element => {
+   sumAge.push(element.age);
+});
+    console.log(sumAge);
+    console.log(sumAge.reduce(reducer));
+    
 
+})
     // your code here
 })();

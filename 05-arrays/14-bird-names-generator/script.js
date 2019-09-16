@@ -37,6 +37,33 @@
         "tangent",
         "arboré",
     ]);
+    function getRandomInt(max) {
+        return Math.floor(Math.random() * Math.floor(max));
+      }
+    //  convertis le listing set en array
+      let arrAdj = Array.from(adjectives);
+        console.log(arrAdj)
+    // initialisation button     
+    document.getElementById("run").addEventListener("click", () => {
+        // adjectif aléatoire
+        let adj = arrAdj[getRandomInt(arrAdj.length)];
+        console.log(adj);
+        // Oiseau aléatoire
+        let bird = birds[getRandomInt(birds.length)];
+        console.log(bird);
+        // attributs oiseaux 
+        let birdname = bird.name
+        let birdtype = bird.fem;
+        console.log(birdname);
+        if (birdtype === undefined){birdtype = false;}
+        else {birdtype = true;}
+        console.log(birdtype);
+        //condition féminin / masculin
+        if (birdtype === true){document.getElementById("target").innerHTML = (birdname +" "+adj+"e")} 
+        else {document.getElementById("target").innerHTML = (birdname +" "+adj)} 
+
+
+    })
 
     // your code here
 })();

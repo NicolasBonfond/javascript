@@ -26,6 +26,11 @@
         "raisin",
         "cerise",
     ];
+document.getElementById("run").addEventListener("click", () => {
+    let dedupe = [...new Set(fruits)];
+    console.log(dedupe);
 
+
+})
     // your code here
 })();

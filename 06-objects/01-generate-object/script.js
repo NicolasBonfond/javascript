@@ -10,5 +10,9 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    var people = {lastname: "Bonfond", firstname: "Nicolas", age: 27, city: "Aywaille", country: "Belgique"}
+    document.getElementById("run").addEventListener("click", () => {
+    
+     console.log("Voici "+people.firstname+" "+people.lastname+", il a "+people.age+" ans et il habite à "+people.city+" en "+people.country);   
+    })    // your code here
 })();
