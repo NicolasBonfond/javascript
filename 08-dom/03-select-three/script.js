@@ -10,5 +10,9 @@
 // You will have time to focus on it later.
 
 (() => {
+var x = document.getElementsByClassName("target")
+   for (i = 0; i < x.length; i++)
+   x[i].innerHTML = "Owned";
+    
     // your code here
 })();

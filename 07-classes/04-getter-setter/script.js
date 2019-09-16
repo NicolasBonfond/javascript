@@ -10,5 +10,23 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+class person {
+constructor (firstname, lastname) {
+    this.firstname = firstname;
+    this.lastname = lastname;
+}
+get fullName(){
+    return this.firstname + " " + this.lastname;
+}
+set fullName(name){
+    [this.firstname, this.lastname] = name.split(" ");
+}
+}
+
+document.getElementById("run").addEventListener("click", () => {
+let nicob = new person("Nicolas", "Bonfond")
+console.log(nicob.fullName);
+nicob.fullName= "Benoit Bonfond";
+console.log(nicob.fullName);
+})
 })();
