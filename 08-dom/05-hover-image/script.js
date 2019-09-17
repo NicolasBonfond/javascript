@@ -10,5 +10,19 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    //parent
+    let image = document.querySelector("img")
+    //attribut hover
+    let h = image.dataset.hover;
+    let hvaleur = h.value;
+    //attribut image
+    let a = image.getAttribute("src");
+    let avaleur = a.value;
+
+    //event hover
+    image.addEventListener("mouseover", function(event) {
+    avaleur.innerHTML = hvaleur;
+    })
+
+
 })();
